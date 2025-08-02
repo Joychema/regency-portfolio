@@ -35,7 +35,7 @@ Styled like a 19th-century calling card, it showcases my digital debut with eleg
 
 ## 🌐 Live Site
 
-🔗 [https://joychema.vercel.app]
+🔗 [(https://regency-portfolio.vercel.app/)]
 
 ---
 
