@@ -50,18 +50,77 @@ p, li, a, label {
 ------------------------------ */
 
 .calling-card {
-  background-color: #E1C699; /* Antique Gold */
+  background-color: #E1C699; 
   text-align: center;
   padding: 2rem;
-  border-bottom: 2.5px dotted #3B3C40;
+  /* border-bottom: 2.5px dotted #3B3C40; */
+  border-bottom: 2px solid transparent;
+  background-image: linear-gradient(to right, #D8A7B1, #E1C699, #D8A7B1);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 2px;
+
 }
 
 .calling-card .subheading {
   font-family: 'Playfair Display', serif;
+  color: #7A6F6F; /* softer neutral tone */
   font-size: 1.5rem;
   font-style: italic;
   margin-top: 0.5rem;
 }
+
+.calling-card h1 {
+  color: #D8A7B1; /* your dusty rose */
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+}
+
+/* .calling-card .subheading {
+  color: #7A6F6F; 
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-top: -0.5rem;
+}                                                   */
+.calling-card::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #A26769;
+  margin: 0.5rem auto 1.5rem auto;
+}
+
+.call-to-action {
+  display: inline-block;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  background-color: #D8A7B1;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-action:hover {
+  background-color: #A26769;
+}
+
+.nav-list a {
+  color: #3B3C40;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #A26769; /* hover elegance */
+  border-bottom: 2px solid #D8A7B1;
+}
+
 
 /* ------------------------------
    Navigation
@@ -120,13 +179,29 @@ p, li, a, label {
 
 .about-portrait {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   gap: 2rem;
-  align-items: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
 }
 
-.portrait-container {
-  flex: 0 0 160px;
+/* Column layout for small screens */
+@media (max-width: 768px) {
+  .about-portrait {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 90%;
+  }
+
+  .portrait-container {
+    /* display: flex;
+    justify-content: center; */
+    flex: 0 0 auto;
+  }
 }
 
 .portrait {
@@ -146,6 +221,23 @@ p, li, a, label {
 .about-text p {
   margin-bottom: 1rem;
 }
+
+.about-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-list li {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.about-list li strong {
+  color: #A26769;
+  font-family: 'Playfair Display', serif;
+}
+
 
 /* ------------------------------
    Languages & Tools Section
@@ -173,6 +265,38 @@ p, li, a, label {
   margin-bottom: 0.75rem;
   font-size: 1.125rem;
   line-height: 1.6;
+}
+.tool-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.tool-columns ul {
+  flex: 1 1 45%;
+  list-style-type: "🌸 ";
+  padding-left: 1.5rem;
+}
+
+.tool-columns li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.tool-columns li strong {
+  color: #A26769;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+}
+
+/* Responsive: stack columns on narrow viewports */
+@media (max-width: 768px) {
+  .tool-columns {
+    flex-direction: column;
+  }
 }
 
 
@@ -213,6 +337,28 @@ p, li, a, label {
 
 #education a:hover {
   background-color: #A26769;
+}
+
+.education-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.education-list li {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.education-list li strong {
+  color: #A26769;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+}
+
+.education-list li em {
+  font-style: italic;
+  color: #5A4E4E;
 }
 
 
@@ -284,6 +430,21 @@ p, li, a, label {
   font-size: 2rem;
   color: #A26769;
   margin-bottom: 1rem;
+}
+
+.interest-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.interest-list li {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.interest-list strong {
+  color: #A26769;
 }
 
 
@@ -384,16 +545,31 @@ button:hover {
    Footer
 ------------------------------ */
 
-footer {
-  text-align: center;
-  padding: 2rem;
+.site-footer {
   background-color: #E1C699;
   color: #3B3C40;
+  text-align: center;
   font-style: italic;
-  border-top: 2px solid #A26769;
+  padding: 2rem 1rem;
+  /* border-top: 2px solid #A26769; */
+  font-size: 1.05rem;
 }
 
-footer p {
-  margin: 0;
-  font-size: 1.125rem;
+.site-footer a {
+  color: #A26769;
+  text-decoration: none;
+  font-style: normal;
 }
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+.site-footer::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  margin: 0 auto 1rem;
+  background-color: #A26769;
+}
+

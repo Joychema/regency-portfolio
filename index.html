@@ -27,6 +27,8 @@ See README.md for full design intent and structure.
   <header class="calling-card" role="banner">
     <h1 class="name">Joy</h1>
     <p class="subheading">"A Lady Devoted to Code, Elegance, and Purpose"</p>
+    <!-- ✨ Call to Action Button -->
+      <a href="#projects" class="call-to-action" aria-label="Skip to Projects">Peruse My Works</a>
     <nav aria-label="Main navigation">
       <ul class="nav-list">
         <li><a href="#about">About</a></li>
@@ -53,63 +55,123 @@ See README.md for full design intent and structure.
         </div>
         <div class="about-text">
             <h2>About the Dev</h2>
-            <p>
-            Permit me the honour of a brief introduction. I am Joy, a devoted craftswoman of the web, equally enchanted by the elegance of front-end design and the integrity of back-end logic. Schooled in both the structure of data and the art of user experience, I seek always to weave clarity, purpose, and grace into every line of code I commit.
-            </p>
-            <p>
-            With a passion for innovation and a fondness for refinement, I take great delight in creating digital experiences that are both beautiful and functional—where form meets function in the most dignified manner.
-            </p>
+            <ul class="about-list">
+              <li>
+                <strong>💻 Profession:</strong> A humble craftswoman of the web, passionate about creating digital experiences that are both beautiful and functional.
+              </li>
+              <li>
+                <strong>🎨 Strengths:</strong> Balancing front-end elegance with back-end precision — where form meets structure.
+              </li>
+              <li>
+                <strong>🧠 Mindset:</strong> I write code with clarity, purpose, and intention — always seeking harmony between user needs and technical elegance.
+              </li>
+              <li>
+                <strong>🌱 Motto:</strong> Ever learning, ever refining — for every project is a new chapter in craftsmanship.
+              </li>
+            </ul>
         </div>
     </section>
 
 <!-- 🧵 Languages & Tools -->
     <section id="languages" class="society-section">
          <h2>Languages & Tools</h2>
-        <ul>
-            <li>Python – A language of clarity and control, most suitable for structured prose and powerful back-end endeavors.</li>
-            <li>JavaScript – Ever sprightly and interactive, like the most animated of parlour guests.</li>
-            <li>CSS – For finery, flair, and the finishing touch of every well-dressed page.</li>
-            <li>Django & React – Frameworks of function and grace; one for order, the other for elegance in motion.</li>
-            <li>MySQL – A most disciplined ledger keeper of data, precise and swift.</li>
-            <li>Bootstrap – A wardrobe of pre-made elegance, ready to wear at the press of a key.</li>
-            <li>Git & GitHub – The correspondence and archive of my code, sealed and shared with decorum.</li>
-        </ul>
+        <div class="tool-columns">
+          <ul>
+            <li><strong>Python</strong> – Elegant and readable, perfect for structured back-end logic.</li>
+            <li><strong>JavaScript</strong> – Energetic and interactive, ideal for front-end charm.</li>
+            <li><strong>CSS</strong> – Brings beauty and refinement to every page.</li>
+            <li><strong>Django</strong> – A robust framework for orderly back-end systems.</li>
+          </ul>
+
+          <ul>
+            <li><strong>React</strong> – Dynamic and expressive for modern UI craftsmanship.</li>
+            <li><strong>MySQL</strong> – A precise keeper of structured data.</li>
+            <li><strong>Bootstrap</strong> – Elegant components, ready to wear with ease.</li>
+            <li><strong>Git & GitHub</strong> – Version control with collaborative grace.</li>
+          </ul>
+        </div>
+        <!-- <p>These are but a few of the tools I wield in my digital pursuits, each chosen with care and purpose.</p> -->
+        <!-- </div> -->
     </section>
 
 <!-- 🎓 Education Section -->
     <section id="education" class="society-section">
         <h2>Education</h2>
-        <p>My academic journey began at the esteemed Jomo Kenyatta University of Agriculture and Technology, where I presently pursue a Bachelor of Science in Geospatial Information Science. A curriculum rich in spatial understanding, data visualization, and geospatial web technologies.</p>
+        <ul class="education-list">
+          <li>
+            <strong>🎓 Jomo Kenyatta University of Agriculture & Technology (JKUAT)</strong><br />
+            <em>BSc. Geospatial Information Science (Ongoing)</em><br />
+            Focus on spatial analytics, data visualization, and geospatial web tech.
+          </li>
 
-        <p>Further refinement of my craft took place at EMobilis Technology Institute and through the Power Learn Project, where I was schooled in the modern dialects of the web: Python, Django, and the Bootstrap framework, all under a banner of collaboration and mentorship.</p>
+          <li>
+            <strong>👩‍💻 Emobilis Technology Institute</strong><br />
+            Web Development Bootcamp – Python, Django, Bootstrap, version control.
+          </li>
 
-        <p>I have also acquired special distinction in modern geospatial technologies through Esri’s MOOC, and currently attend a Django REST API bootcamp—my latest intellectual promenade.</p>
+          <li>
+            <strong>💡 Power Learn Project (PLP)</strong><br />
+            Software Dev Fellowship – Full-stack training & collaborative projects.
+          </li>
 
-        <p><a href="assets/Joy_CV.pdf" download aria-label="Download my curriculum vitae">Download My Curriculum Vitae</a></p>
-        <p>My education is a tapestry woven with threads of knowledge, experience, and the ever-present desire to learn and grow.</p>
+          <!-- <li>
+            <strong>🌍 Esri MOOC</strong><br />
+            Advanced skills in GIS & modern geospatial technologies.
+          </li>
+
+          <li>
+            <strong>📚 Django REST Bootcamp</strong><br />
+            Current pursuit: crafting RESTful APIs with elegance and precision.
+          </li> -->
+        </ul>
+
+        <p><a href="assets/Joy_CV.pdf" download aria-label="Download Curriculum Vitae">📄 Download My Curriculum Vitae</a></p>
     </section>
 
 <!-- 🏛️ Projects Showcase -->
-    <section id="projects" class="society-section">
-         <h2>Projects</h2>
+<section id="projects" class="society-section">
+  <h2>Projects</h2>
 
-        <article class="project-card">
-            <h3>Event Management & Booking System</h3>
-            <p>An application designed for refined social gatherings, where attendees may view, book, and attend events with seamless grace. Event hosts may curate and manage their engagements effortlessly. Constructed with Python, Django, and MySQL.</p>
-            <a href="https://github.com/Joychema/EventHub" target="_blank">View the Project on GitHub</a>
-        </article>
+  <article class="project-card">
+    <h3>🎩 Event Management & Booking System</h3>
+    <p>A refined platform for hosting and attending events with ease and decorum.</p>
+    <p><strong>Built with:</strong> Python, Django, MySQL</p>
+    <a href="https://github.com/Joychema/EventHub" target="_blank">View on GitHub</a>
+  </article>
 
-        <article class="project-card">
-            <h3>The Library App</h3>
-            <p>A digital bookshelf for the modern reader. This browser-based app showcases CRUD operations using JavaScript and DOM manipulation, all with the finesse of a well-run lending society.</p>
-            <a href="https://github.com/Joychema/Library-Project" target="_blank">Peruse the Repository</a>
-        </article>
-    </section>
+  <article class="project-card">
+    <h3>📚 The Library App</h3>
+    <p>A digital bookshelf for lending and managing books, as orderly as a governess's register.</p>
+    <p><strong>Built with:</strong> JavaScript, HTML, CSS (CRUD + DOM manipulation)</p>
+    <a href="https://github.com/Joychema/Library-Project" target="_blank">Peruse the Code</a>
+  </article>
+
+  <article class="project-card">
+    <h3>🎀 The Lady’s Portfolio</h3>
+    <p>This very site — a personal showcase of elegance, wit, and front-end finesse.</p>
+    <p><strong>Built with:</strong> HTML5, CSS3, handcrafted with thematic precision</p>
+    <a href="https://github.com/Joychema/regency-portfolio" target="_blank">View the Source</a>
+  </article>
+</section>
+
 
 <!-- 💡 Interests Section -->
     <section id="interests" class="society-section">
         <h2>Interests</h2>
-        <p>I am most captivated by the elegant convergence of design and functionality, particularly in the creation of refined user interfaces and intelligent web applications. I hold a strong affection for open-source collaboration, modern frameworks, and the ever-expanding realms of data science and IoT.</p>
+        <ul class="interest-list">
+    <li>
+      <strong>🌐 Front-End Design:</strong> Crafting refined, user-centered interfaces with elegance and responsiveness.
+    </li>
+    <li>
+      <strong>🤝 Open Source:</strong> Contributing to shared digital pursuits and learning from community-driven efforts.
+    </li>
+    <li>
+      <strong>🧠 Emerging Technologies:</strong> Enthralled by the expanding world of data science, IoT, and spatial analytics.
+    </li>
+    <li>
+      <strong>🧩 Web Applications:</strong> Building solutions that blend form, function, and delightful interactivity.
+    </li>
+  </ul>
     </section>
 
 <!-- 💌 Contact Form -->
@@ -117,6 +179,7 @@ See README.md for full design intent and structure.
       <h2>Send Word</h2>
         <form action="https://formsubmit.co/kosgeijoy63@gmail.com" method="POST" aria-label="Contact Form">
             <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_autoresponse" value="Dearest visitor, your kind message has been received with gratitude. A reply shall follow most promptly. — Joy 🕊️">
 
             <label for="name">Your Good Name:</label>
             <input type="text" id="name" name="name" required>
@@ -139,9 +202,13 @@ See README.md for full design intent and structure.
 
 
 <!-- 🌙 Footer -->
-  <footer>
-    <p>"With my sincerest gratitude for your most gracious visit."<br>&copy; 2025 Joy</p>
-  </footer>
+  <footer class="site-footer">
+    <p>“With deepest gratitude for your gracious visit.”</p>
+    <p>&mdash; <strong>Joy</strong> | &copy; 2025 |
+    <a href="https://github.com/Joychema" target="_blank" aria-label="Visit my GitHub">GitHub</a>
+    </p>
+</footer>
+
 </body>
 </html>
 
