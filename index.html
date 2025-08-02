@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<!--
+Author: Joy
+Project: Regency-Inspired Personal Portfolio Website
+Submission: PLP Academy Hackathon – July 2025 Cohort
+See README.md for full design intent and structure.
+-->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A refined and Regency-inspired portfolio belonging to a modern lady of code, styled with grace and wit.">
+  <meta name="author" content="Joy">
+  <title>Joy | A Lady of Code & Composure</title>
+
+<!-- External Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+<!-- Google Fonts: Playfair Display & Great Vibes -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header: Name, Subheading, Navigation Menu -->
+  <header class="calling-card" role="banner">
+    <h1 class="name">Joy</h1>
+    <p class="subheading">"A Lady Devoted to Code, Elegance, and Purpose"</p>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- ✉️ Hero Section: Warm Regency-style Greeting -->
+  <main>
+    <section class="hero" aria-label="Introduction">
+      <h2>Dearest Visitor,</h2>
+      <p>Pray accept my warmest regards. I am Joy, a humble craftswoman of the web, ever in pursuit of noble opportunities and digital excellence.</p>
+    </section>
+
+<!-- 🖼️ About Section: Introduction with Portrait -->
+    <section id="about" class="society-section about-portrait">
+        <div class="portrait-container">
+            <img src="assets/images/joy-portrait.png" alt="A dignified portrait of Joy" class="portrait" />
+        </div>
+        <div class="about-text">
+            <h2>About the Dev</h2>
+            <p>
+            Permit me the honour of a brief introduction. I am Joy, a devoted craftswoman of the web, equally enchanted by the elegance of front-end design and the integrity of back-end logic. Schooled in both the structure of data and the art of user experience, I seek always to weave clarity, purpose, and grace into every line of code I commit.
+            </p>
+            <p>
+            With a passion for innovation and a fondness for refinement, I take great delight in creating digital experiences that are both beautiful and functional—where form meets function in the most dignified manner.
+            </p>
+        </div>
+    </section>
+
+<!-- 🧵 Languages & Tools -->
+    <section id="languages" class="society-section">
+         <h2>Languages & Tools</h2>
+        <ul>
+            <li>Python – A language of clarity and control, most suitable for structured prose and powerful back-end endeavors.</li>
+            <li>JavaScript – Ever sprightly and interactive, like the most animated of parlour guests.</li>
+            <li>CSS – For finery, flair, and the finishing touch of every well-dressed page.</li>
+            <li>Django & React – Frameworks of function and grace; one for order, the other for elegance in motion.</li>
+            <li>MySQL – A most disciplined ledger keeper of data, precise and swift.</li>
+            <li>Bootstrap – A wardrobe of pre-made elegance, ready to wear at the press of a key.</li>
+            <li>Git & GitHub – The correspondence and archive of my code, sealed and shared with decorum.</li>
+        </ul>
+    </section>
+
+<!-- 🎓 Education Section -->
+    <section id="education" class="society-section">
+        <h2>Education</h2>
+        <p>My academic journey began at the esteemed Jomo Kenyatta University of Agriculture and Technology, where I presently pursue a Bachelor of Science in Geospatial Information Science. A curriculum rich in spatial understanding, data visualization, and geospatial web technologies.</p>
+
+        <p>Further refinement of my craft took place at EMobilis Technology Institute and through the Power Learn Project, where I was schooled in the modern dialects of the web: Python, Django, and the Bootstrap framework, all under a banner of collaboration and mentorship.</p>
+
+        <p>I have also acquired special distinction in modern geospatial technologies through Esri’s MOOC, and currently attend a Django REST API bootcamp—my latest intellectual promenade.</p>
+
+        <p><a href="assets/Joy_CV.pdf" download aria-label="Download my curriculum vitae">Download My Curriculum Vitae</a></p>
+        <p>My education is a tapestry woven with threads of knowledge, experience, and the ever-present desire to learn and grow.</p>
+    </section>
+
+<!-- 🏛️ Projects Showcase -->
+    <section id="projects" class="society-section">
+         <h2>Projects</h2>
+
+        <article class="project-card">
+            <h3>Event Management & Booking System</h3>
+            <p>An application designed for refined social gatherings, where attendees may view, book, and attend events with seamless grace. Event hosts may curate and manage their engagements effortlessly. Constructed with Python, Django, and MySQL.</p>
+            <a href="https://github.com/Joychema/EventHub" target="_blank">View the Project on GitHub</a>
+        </article>
+
+        <article class="project-card">
+            <h3>The Library App</h3>
+            <p>A digital bookshelf for the modern reader. This browser-based app showcases CRUD operations using JavaScript and DOM manipulation, all with the finesse of a well-run lending society.</p>
+            <a href="https://github.com/Joychema/Library-Project" target="_blank">Peruse the Repository</a>
+        </article>
+    </section>
+
+<!-- 💡 Interests Section -->
+    <section id="interests" class="society-section">
+        <h2>Interests</h2>
+        <p>I am most captivated by the elegant convergence of design and functionality, particularly in the creation of refined user interfaces and intelligent web applications. I hold a strong affection for open-source collaboration, modern frameworks, and the ever-expanding realms of data science and IoT.</p>
+    </section>
+
+<!-- 💌 Contact Form -->
+    <section id="contact" class="society-section">
+      <h2>Send Word</h2>
+        <form action="https://formsubmit.co/kosgeijoy63@gmail.com" method="POST" aria-label="Contact Form">
+            <input type="hidden" name="_captcha" value="false">
+
+            <label for="name">Your Good Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Correspondence Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Kind Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Dispatch Message</button>
+        </form>
+    </section>
+  </main>
+
+<!-- 🌙 Footer -->
+  <footer>
+    <p>"With my sincerest gratitude for your most gracious visit."<br>&copy; 2025 Joy</p>
+  </footer>
+</body>
+</html>
+
+
