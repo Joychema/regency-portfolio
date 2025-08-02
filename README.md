@@ -38,7 +38,7 @@ An elegant, accessible, and SEO-friendly personal portfolio inspired by the Rege
 
 ## 🌐 Live Site
 
-You may peruse the portfolio here: [https://your-live-link.com](#)  
+You may peruse the portfolio here: [regency-portfolio.vercel.app](#)  
 
 ---
 
