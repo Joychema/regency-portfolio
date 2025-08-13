@@ -1,215 +1,313 @@
 <!DOCTYPE html>
-
 <!--
 Author: Joy
-Project: Regency-Inspired Personal Portfolio Website
+Project: Minimal Regency-Inspired Personal Portfolio
 Submission: PLP Academy Hackathon – July 2025 Cohort
-See README.md for full design intent and structure.
 -->
 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A refined and Regency-inspired portfolio belonging to a modern lady of code, styled with grace and wit.">
+  <meta name="description" content="Portfolio of Joy — Aspiring GIS Developer & Software Developer, blending technical skill with refined design.">
   <meta name="author" content="Joy">
-  <title>Joy | A Lady of Code & Composure</title>
+  <title>Joy | GIS Developer & Software Developer</title>
 
-<!-- External Stylesheet -->
+  <!-- External Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 
-<!-- Google Fonts: Playfair Display & Great Vibes -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 <body id="top">
 
-<!-- Header: Name, Subheading, Navigation Menu -->
-  <header class="calling-card" role="banner">
-    <h1 class="name">Joy</h1>
-    <p class="subheading">"A Lady Devoted to Code, Elegance, and Purpose"</p>
-    <!-- ✨ Call to Action Button -->
-      <a href="#projects" class="call-to-action" aria-label="Skip to Projects">Peruse My Works</a>
-    <nav aria-label="Main navigation">
-      <ul class="nav-list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#languages">Languages</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<!-- Navigation bar -->
+ <nav class="main-nav" aria-label="Main navigation">
+  <div class="nav-container">
+    <a href="#top" class="logo">
+      <img src="assets/images/myicon-removebg.png" alt="Joy Logo" class="logo-icon">
+    </a>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+      <!-- Simple hamburger icon (3 bars) -->
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#languages">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+ </nav>
 
-<!-- ✉️ Hero Section: Warm Regency-style Greeting -->
-  <main>
-    <section class="hero" aria-label="Introduction">
-      <h2>Dearest Visitor,</h2>
-      <p>Pray accept my warmest regards. I am Joy, a humble craftswoman of the web, ever in pursuit of noble opportunities and digital excellence.</p>
-    </section>
+<!-- Header -->
+<header class="intro-header" role="banner">
+  <div class="intro-text">
+    <h1 class="name">Joy Kosgei</h1>
+    <h2 class="role">Aspiring GIS Developer & Software Developer</h2>
+    <p class="tagline">
+      Designing intelligent GIS and software solutions that connect people, places, and technology. 
+    </p>
 
-<!-- 🖼️ About Section: Introduction with Portrait -->
-    <section id="about" class="society-section about-portrait">
-        <div class="portrait-container">
-            <img src="assets/images/joy-portrait.png" alt="A dignified portrait of Joy" class="portrait" />
+    <div class="cta-buttons">
+      <a href="#projects" class="btn primary">View My Projects</a>
+      <a href="#contact" class="btn secondary">Get In Touch</a>
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/Joychema" target="_blank" aria-label="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6V20c-3.3.7-4-1.6-4-1.6a3.2 3.2 0 0 0-1.4-1.8c-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.2 1.9 1.2 1 1.9 2.7 1.4 3.4 1.1.1-.7.4-1.4.7-1.7-2.6-.3-5.3-1.3-5.3-5.8a4.6 4.6 0 0 1 1.2-3.2c-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2a4.6 4.6 0 0 1 1.2 3.2c0 4.5-2.7 5.5-5.3 5.8.4.4.7 1.1.7 2.3v3.4c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/>
+        </svg>
+      </a>
+
+      <a href="https://www.linkedin.com/in/joy-kosgei" target="_blank" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 0h-14a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5v-14a5 5 0 0 0-5-5zm-11 19h-3v-10h3v10zm-1.5-11.3a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6zm13.5 11.3h-3v-5.5c0-1.3-.5-2.2-1.7-2.2-1 0-1.5.7-1.8 1.3-.1.2-.1.5-.1.8v5.6h-3s.1-9.1 0-10h3v1.4c.4-.6 1.2-1.5 2.8-1.5 2 0 3.6 1.3 3.6 4v6.1z"/>
+        </svg>
+      </a>
+
+      <a href="mailto:kosgeijoy63@gmail.com" aria-label="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 13.5 0 6.75v12.5A1.75 1.75 0 0 0 1.75 21h20.5A1.75 1.75 0 0 0 24 19.25V6.75L12 13.5zM22.25 3H1.75A1.75 1.75 0 0 0 0 4.75v.44l12 7.06 12-7.06v-.44A1.75 1.75 0 0 0 22.25 3z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+
+<!-- <header class="calling-card" role="banner">
+  <h1 class="name">Joy</h1>
+  <p class="subheading">Aspiring GIS Developer & Software Developer</p>
+  <a href="#projects" class="call-to-action" aria-label="View Projects">View My Work</a>
+  <nav aria-label="Main navigation">
+    <ul class="nav-list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#languages">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header> -->
+
+<main>
+  <!-- Hero
+  <section class="hero" aria-label="Introduction">
+    <h2>Welcome</h2>
+    <p>I am Joy — an aspiring GIS Developer & Software Developer passionate about crafting elegant, functional, and user-friendly digital solutions. My work blends modern technical skill with a refined sense of design.</p>
+  </section> -->
+
+  <!-- About -->
+  <section id="about" class="about-portrait">
+  <div class="portrait-container">
+    <img src="assets/images/joy-portrait.png" alt="Portrait of Joy" class="portrait" />
+  </div>
+
+  <div class="about-text">
+    <h2>About Me</h2>
+    <ul class="about-list">
+      <li><strong>Profession:</strong> Aspiring GIS Developer and Software Developer, creating solutions that connect people, places, and technology.</li>
+      <li><strong>Strengths:</strong> Balancing clean design with efficient code — where form meets function.</li>
+      <li><strong>Mindset:</strong> Driven by clarity, purpose, and the pursuit of excellence.</li>
+      <li><strong>Approach:</strong> Always learning, adapting, and refining my craft.</li>
+    </ul>
+
+    <div class="stats-cards">
+      <div class="stat-card">
+        <h3>2+</h3>
+        <p>Years Learning & Building</p>
+      </div>
+      <div class="stat-card">
+        <h3>3+</h3>
+        <p>Projects Completed</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Languages & Tools -->
+  <section id="languages">
+  <h2>Languages & Tools</h2>
+  
+  <div class="skills-cards">
+    <!-- Programming Languages -->
+    <div class="skill-card">
+      <h3>Programming Languages</h3>
+      <div class="skill-icons">
+        <div class="skill-item">
+          <img src="assets/icons/python.png" alt="Python" />
+          <p>Python</p>
         </div>
-        <div class="about-text">
-            <h2>About the Dev</h2>
-            <ul class="about-list">
-              <li>
-                <strong>💻 Profession:</strong> A humble craftswoman of the web, passionate about creating digital experiences that are both beautiful and functional.
-              </li>
-              <li>
-                <strong>🎨 Strengths:</strong> Balancing front-end elegance with back-end precision — where form meets structure.
-              </li>
-              <li>
-                <strong>🧠 Mindset:</strong> I write code with clarity, purpose, and intention — always seeking harmony between user needs and technical elegance.
-              </li>
-              <li>
-                <strong>🌱 Motto:</strong> Ever learning, ever refining — for every project is a new chapter in craftsmanship.
-              </li>
-            </ul>
+        <div class="skill-item">
+          <img src="assets/icons/js.png" alt="JavaScript" />
+          <p>JavaScript</p>
         </div>
-    </section>
-
-<!-- 🧵 Languages & Tools -->
-    <section id="languages" class="society-section">
-         <h2>Languages & Tools</h2>
-        <div class="tool-columns">
-          <ul>
-            <li><strong>Python</strong> – Elegant and readable, perfect for structured back-end logic.</li>
-            <li><strong>JavaScript</strong> – Energetic and interactive, ideal for front-end charm.</li>
-            <li><strong>CSS</strong> – Brings beauty and refinement to every page.</li>
-            <li><strong>Django</strong> – A robust framework for orderly back-end systems.</li>
-          </ul>
-
-          <ul>
-            <li><strong>React</strong> – Dynamic and expressive for modern UI craftsmanship.</li>
-            <li><strong>MySQL</strong> – A precise keeper of structured data.</li>
-            <li><strong>Bootstrap</strong> – Elegant components, ready to wear with ease.</li>
-            <li><strong>Git & GitHub</strong> – Version control with collaborative grace.</li>
-          </ul>
+        <div class="skill-item">
+          <img src="assets/icons/css-3.png" alt="CSS" />
+          <p>CSS</p>
         </div>
-        <!-- <p>These are but a few of the tools I wield in my digital pursuits, each chosen with care and purpose.</p> -->
-        <!-- </div> -->
-    </section>
+      </div>
+    </div>
 
-<!-- 🎓 Education Section -->
-    <section id="education" class="society-section">
-        <h2>Education</h2>
-        <ul class="education-list">
-          <li>
-            <strong>🎓 Jomo Kenyatta University of Agriculture & Technology (JKUAT)</strong><br />
-            <em>BSc. Geospatial Information Science (Ongoing)</em><br />
-            Focus on spatial analytics, data visualization, and geospatial web tech.
-          </li>
+    <!-- Frameworks & Libraries -->
+    <div class="skill-card">
+      <h3>Frameworks & Libraries</h3>
+      <div class="skill-icons">
+        <div class="skill-item">
+          <img src="assets/icons/python.png" alt="Django" />
+          <p>Django</p>
+        </div>
+        <div class="skill-item">
+          <img src="assets/icons/react.png" alt="React" />
+          <p>React</p>
+        </div>
+        <div class="skill-item">
+          <img src="assets/icons/bootstrap.png" alt="Bootstrap" />
+          <p>Bootstrap</p>
+        </div>
+      </div>
+    </div>
 
-          <li>
-            <strong>👩‍💻 Emobilis Technology Institute</strong><br />
-            Web Development Bootcamp – Python, Django, Bootstrap, version control.
-          </li>
-
-          <li>
-            <strong>💡 Power Learn Project (PLP)</strong><br />
-            Software Dev Fellowship – Full-stack training & collaborative projects.
-          </li>
-
-          <!-- <li>
-            <strong>🌍 Esri MOOC</strong><br />
-            Advanced skills in GIS & modern geospatial technologies.
-          </li>
-
-          <li>
-            <strong>📚 Django REST Bootcamp</strong><br />
-            Current pursuit: crafting RESTful APIs with elegance and precision.
-          </li> -->
-        </ul>
-
-        <p><a href="assets/Joy_CV.pdf" download aria-label="Download Curriculum Vitae">📄 Download My Curriculum Vitae</a></p>
-    </section>
-
-<!-- 🏛️ Projects Showcase -->
-<section id="projects" class="society-section">
-  <h2>Projects</h2>
-
-  <article class="project-card">
-    <h3>🎩 Event Management & Booking System</h3>
-    <p>A refined platform for hosting and attending events with ease and decorum.</p>
-    <p><strong>Built with:</strong> Python, Django, MySQL</p>
-    <a href="https://github.com/Joychema/EventHub" target="_blank">View on GitHub</a>
-  </article>
-
-  <article class="project-card">
-    <h3>📚 The Library App</h3>
-    <p>A digital bookshelf for lending and managing books, as orderly as a governess's register.</p>
-    <p><strong>Built with:</strong> JavaScript, HTML, CSS (CRUD + DOM manipulation)</p>
-    <a href="https://github.com/Joychema/Library-Project" target="_blank">Peruse the Code</a>
-  </article>
-
-  <article class="project-card">
-    <h3>🎀 The Lady’s Portfolio</h3>
-    <p>This very site — a personal showcase of elegance, wit, and front-end finesse.</p>
-    <p><strong>Built with:</strong> HTML5, CSS3, handcrafted with thematic precision</p>
-    <a href="https://github.com/Joychema/regency-portfolio" target="_blank">View the Source</a>
-  </article>
+    <!-- Tools & Technologies -->
+    <div class="skill-card">
+      <h3>Tools & Technologies</h3>
+      <div class="skill-icons">
+        <div class="skill-item">
+          <img src="assets/icons/sql-server.png" alt="MySQL" />
+          <p>MySQL</p>
+        </div>
+        <div class="skill-item">
+          <img src="assets/icons/git-v.png" alt="Git" />
+          <p>Git</p>
+        </div>
+        <div class="skill-item">
+          <img src="assets/icons/github-sign.png" alt="GitHub" />
+          <p>GitHub</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 
-<!-- 💡 Interests Section -->
-    <section id="interests" class="society-section">
-        <h2>Interests</h2>
-        <ul class="interest-list">
-    <li>
-      <strong>🌐 Front-End Design:</strong> Crafting refined, user-centered interfaces with elegance and responsiveness.
-    </li>
-    <li>
-      <strong>🤝 Open Source:</strong> Contributing to shared digital pursuits and learning from community-driven efforts.
-    </li>
-    <li>
-      <strong>🧠 Emerging Technologies:</strong> Enthralled by the expanding world of data science, IoT, and spatial analytics.
-    </li>
-    <li>
-      <strong>🧩 Web Applications:</strong> Building solutions that blend form, function, and delightful interactivity.
-    </li>
-  </ul>
-    </section>
+  <!-- Education -->
+  <section id="education">
+  <h2>Education</h2>
 
-<!-- 💌 Contact Form -->
-    <section id="contact" class="society-section">
-      <h2>Send Word</h2>
-        <form action="https://formsubmit.co/kosgeijoy63@gmail.com" method="POST" aria-label="Contact Form">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_autoresponse" value="Dearest visitor, your kind message has been received with gratitude. A reply shall follow most promptly. — Joy 🕊️">
+  <div class="education-cards">
+    <div class="education-card">
+      <h3>Jomo Kenyatta University of Agriculture & Technology</h3>
+      <p><em>BSc. Geospatial Information Science (Ongoing)</em></p>
+      <p>Specializing in spatial analytics, data visualization, and geospatial web applications.</p>
+    </div>
 
-            <label for="name">Your Good Name:</label>
-            <input type="text" id="name" name="name" required>
+    <div class="education-card">
+      <h3>Emobilis Technology Institute</h3>
+      <p>Web Development Bootcamp – Python, Django, Bootstrap, and version control.</p>
+    </div>
 
-            <label for="email">Your Correspondence Address:</label>
-            <input type="email" id="email" name="email" required>
+    <div class="education-card">
+      <h3>Power Learn Project (PLP)</h3>
+      <p>Full-stack software development training with collaborative projects.</p>
+    </div>
+  </div>
 
-            <label for="message">Your Kind Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+  <div class="cta-container">
+    <a href="assets/Joy_CV.pdf" download class="cta-button" aria-label="Download Curriculum Vitae">
+      📄 Download My CV
+    </a>
+  </div>
+</section>
 
-            <button type="submit">Dispatch Message</button>
-        </form>
-    </section>
-  </main>
 
-<!-- Back to Top Button -->
-<a href="#top" class="back-to-top" aria-label="Return to the top of the page">
-  <img src="assets/icons/Feather.svg" alt="Back to Top Feather Quill" class="quill-icon" />
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <article class="project-card">
+      <h3>Event Management & Booking System</h3>
+      <p>Platform for managing and booking events with ease and structure.</p>
+      <p><strong>Built with:</strong> Python, Django, MySQL</p>
+      <a href="https://github.com/Joychema/EventHub" target="_blank">View on GitHub</a>
+    </article>
+
+    <article class="project-card">
+      <h3>The Library App</h3>
+      <p>Web application for managing book lending and borrowing.</p>
+      <p><strong>Built with:</strong> JavaScript, HTML, CSS</p>
+      <a href="https://github.com/Joychema/Library-Project" target="_blank">View the Code</a>
+    </article>
+
+    <article class="project-card">
+      <h3>The Portfolio Website</h3>
+      <p>This personal site showcasing my skills and projects.</p>
+      <p><strong>Built with:</strong> HTML5, CSS3</p>
+      <a href="https://github.com/Joychema/regency-portfolio" target="_blank">View the Source</a>
+    </article>
+  </section>
+
+  <!-- Interests -->
+  <section id="interests">
+    <h2>Interests</h2>
+    <ul class="interest-list">
+      <li><strong>Front-End Design:</strong> Creating user-focused, responsive interfaces.</li>
+      <li><strong>Open Source:</strong> Contributing to collaborative projects.</li>
+      <li><strong>Emerging Technologies:</strong> Data science, IoT, and GIS innovations.</li>
+      <li><strong>Web Applications:</strong> Functional, efficient, and engaging solutions.</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/kosgeijoy63@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://regency-portfolio.vercel.app/thank-you.html">
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</main>
+
+<!-- Back to Top -->
+<a href="#top" class="back-to-top" aria-label="Back to Top">
+  <img src="assets/icons/quill.svg" alt="Back to Top" class="quill-icon" />
 </a>
 
-
-<!-- 🌙 Footer -->
-  <footer class="site-footer">
-    <p>“With deepest gratitude for your gracious visit.”</p>
-    <p>&mdash; <strong>Joy</strong> | &copy; 2025 |
-    <a href="https://github.com/Joychema" target="_blank" aria-label="Visit my GitHub">GitHub</a>
-    </p>
+<!-- Footer -->
+<footer class="site-footer">
+  <p>&copy; 2025 Joy | GIS Developer & Software Developer</p>
+  <p><a href="https://github.com/Joychema" target="_blank">GitHub</a></p>
 </footer>
 
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navList = document.querySelector('.nav-list');
+
+  navToggle.addEventListener('click', function() {
+    const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+    navToggle.setAttribute('aria-expanded', !expanded);
+    navList.classList.toggle('open');
+  });
+</script>
 </body>
 </html>
+
+
 
 
