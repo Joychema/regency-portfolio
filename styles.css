@@ -536,7 +536,7 @@ p, li, a, label {
   color: #6B4F4F;
 } */
 
-.education-cards {
+/* .education-cards {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
@@ -589,13 +589,125 @@ p, li, a, label {
   .education-cards {
     flex-direction: column;
   }
+} */
+
+#education {
+  background-color: #FBF8F3;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
 }
+
+#education h2 {
+  color: #A26769;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.education-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Individual Cards */
+.edu-card {
+  background: #FFFFFF;
+  border: 1px solid #E6D5C0;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* Icons */
+.edu-icon {
+  font-size: 2rem;
+  color: #A26769;
+  margin-bottom: 0.75rem;
+}
+
+.edu-icon img {
+  width: 2rem;
+  height: 2rem;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto 0.5rem auto;
+  object-fit: contain;
+}
+
+
+
+/* Texts inside the card */
+.edu-card h3 {
+  color: #3B3C40;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.edu-institution {
+  display: block;
+  font-size: 0.95rem;
+  color: #5A4E4E;
+  margin-bottom: 0.25rem;
+}
+
+.edu-date {
+  display: block;
+  font-size: 0.9rem;
+  color: #A26769;
+  margin-bottom: 0.75rem;
+}
+
+.edu-card p {
+  font-size: 1rem;
+  color: #3B3C40;
+}
+
+/* CV Download Block */
+.cv-download {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #FFF8F2;
+  border: 2px dashed #D8A7B1;
+  border-radius: 0.5rem;
+}
+
+.cv-download p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  color: #3B3C40;
+}
+
+.cv-btn {
+  display: inline-block;
+  background-color: #D8A7B1;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cv-btn:hover {
+  background-color: #A26769;
+}
+
+
 
 
 /* ------------------------------
    Projects
 ------------------------------ */
-#projects {
+/* #projects {
   background-color: #F5EFE6;
   padding: 2.5rem;
   border-left: 4px solid #6B4F4F;
@@ -616,6 +728,197 @@ p, li, a, label {
 
 .project-card a:hover {
   color: #2F2F2F;
+} */
+
+#projects {
+  background-color: #FDF9F3;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+}
+
+/* .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+} */
+
+.projects-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* .project-card {
+  background: #fff;
+  border: 1px solid #E6D5C0;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease; */
+/* } */
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1 1 300px;
+  min-width: 280px;
+  max-width: 1fr;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin-bottom: 0.75rem;
+  color: #3B3C40;
+}
+
+.project-card p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #5A4E4E;
+}
+
+.tech-badges span {
+  display: inline-block;
+  background: #F4EFEA;
+  color: #A26769;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.3rem 0.6rem;
+  margin: 0.2rem;
+  border-radius: 0.3rem;
+}
+
+.code-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  background: #A26769;
+  color: #fff;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* .code-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  background: #A26769;
+  color: #fff;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+} */
+
+.code-btn:hover {
+  background: #7A4F51;
+}
+
+.projects-footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.view-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #A26769;
+  color: #A26769;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background: #A26769;
+  color: #fff;
+}
+
+/* ------------------------------
+   Interests
+------------------------------ */
+.interests-grid {
+  display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+/* .interest-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 1.5rem 1.5rem;
+  min-width: 250px;
+  max-width: 400px;
+  flex: 1 1 300px;
+} */
+
+.interest-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 1.5rem 1.5rem;
+  min-width: 250px;
+  max-width: 400px;
+  flex: 1 1 300px;
+}
+
+.interest-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.interest-card .icon {
+  margin-bottom: 0.1rem;
+}
+
+.interest-card .icon img {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  /* margin: 0 auto; */
+}
+
+.interest-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: #3B3C40;
+  font-weight: bold;
 }
 
 /* ------------------------------
