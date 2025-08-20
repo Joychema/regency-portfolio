@@ -349,36 +349,110 @@ Submission: PLP Academy Hackathon – July 2025 Cohort
 
 
   <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form action="https://formsubmit.co/kosgeijoy63@gmail.com" method="POST">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://regency-portfolio.vercel.app/thank-you.html">
+  <section id="contact" class="contact-section">
+  <h2>Get In Touch</h2>
+  <p class="contact-intro">
+    I'm eager to connect and discuss potential collaborations or career opportunities. Please feel free to reach out.
+  </p>
 
-      <label for="name">Name:</label>
+  <form action="https://formsubmit.co/kosgeijoy63@gmail.com" method="POST" class="contact-form">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://regency-portfolio.vercel.app/thank-you.html">
+
+    <div class="form-group">
+      <label for="name">Your Name</label>
       <input type="text" id="name" name="name" required>
+    </div>
 
-      <label for="email">Email:</label>
+    <div class="form-group">
+      <label for="email">Your Email</label>
       <input type="email" id="email" name="email" required>
+    </div>
 
-      <label for="message">Message:</label>
+    <div class="form-group">
+      <label for="message">Your Message</label>
       <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
 
-      <button type="submit">Send</button>
-    </form>
-  </section>
+    <button type="submit" class="btn-primary">Send Message</button>
+  </form>
+</section>
+
 </main>
 
 <!-- Back to Top -->
-<a href="#top" class="back-to-top" aria-label="Back to Top">
+<!-- <a href="#top" class="back-to-top" aria-label="Back to Top">
   <img src="assets/icons/quill.svg" alt="Back to Top" class="quill-icon" />
-</a>
+</a> -->
 
 <!-- Footer -->
 <footer class="site-footer">
-  <p>&copy; 2025 Joy | GIS Developer & Software Developer</p>
-  <p><a href="https://github.com/Joychema" target="_blank">GitHub</a></p>
+  <div class="footer-container">
+    <!-- Collaboration Section -->
+    <div class="footer-col">
+      <h3>Let's Build Something Together</h3>
+      <p>
+        I'm always seeking new collaborations and opportunities. 
+        Feel free to reach out and share your ideas or project needs—I'd love to hear from you.
+      </p>
+      <ul class="footer-contact">
+        <li>
+          <img src="assets/icons/mail.png" alt="Email Icon" class="footer-icon">
+          <a href="mailto:kosgeijoy63@gmail.com">kosgeijoy63@gmail.com</a>
+        </li>
+        <li>
+          <img src="assets/icons/location.png" alt="Location Icon" class="footer-icon">
+          Nairobi, Kenya
+        </li>
+        <li>
+          <img src="assets/icons/job-search.png" alt="Available Icon" class="footer-icon">
+          Available for new opportunities
+        </li>
+      </ul>
+    </div>
+
+    <!-- Goals Section -->
+    <div class="footer-col">
+      <h3>Opportunities I'm Seeking</h3>
+      <ul>
+        <li>Full-time and freelance opportunities in geospatial development</li>
+        <li>Collaborations on web mapping and open-source projects</li>
+        <li>Involvement in the GIS tech community</li>
+        <!-- <li>Mentoring & knowledge sharing</li>
+        <li>Tech community involvement</li> -->
+      </ul>
+    </div>
+
+    <!-- Quick Navigation -->
+    <div class="footer-col">
+      <h3>Quick Nav</h3>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#languages">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Joy Kosgei | GIS Developer & Software Developer</p>
+    <!-- <div class="social-icons">
+      <a href="https://github.com/Joychema" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/joy" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:kosgeijoy63@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div> -->
+  </div>
 </footer>
+
 
 <script>
   const navToggle = document.querySelector('.nav-toggle');
