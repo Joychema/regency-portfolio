@@ -50,13 +50,24 @@
     .thank-you-container a:hover {
       background: #7c4d4d;
     }
-    .thank-you-icon img {
-      width: 1.5rem;
-      height: 1.5rem;
-      display: block;
-      font-size: 3rem;
-      margin-bottom: 1rem;
+    .thank-you-icon {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      margin-top: 3rem;
       color: #A26769;
+    }
+
+    .thank-you-icon img {
+      width: 10vh;
+      height: 10vh;
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    .thank-you-icon img:hover {
+      transform: scale(1.1);
     }
   </style>
 </head>
