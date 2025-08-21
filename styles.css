@@ -738,7 +738,7 @@ p, li, a, label {
   background-color: #FDF9F3;
   padding: 2.5rem;
   border-radius: 0.5rem;
-  margin: 0;
+  /* margin: 0; */
 }
 
 /* .projects-grid {
@@ -775,7 +775,7 @@ p, li, a, label {
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   padding: 2rem;
   margin-bottom: 2rem;
-  margin-top: 0.5rem;
+  /* margin-top: 0.5rem; */
 }
 
 .project-card:hover {
